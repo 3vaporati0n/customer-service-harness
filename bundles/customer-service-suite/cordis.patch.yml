@@ -1,0 +1,25 @@
+- insert:
+    - id: customer-sqlite-storage
+      name: '@dsh-customer-service/storage-sqlite'
+    - id: customer-state
+      name: '@dsh-customer-service/state'
+    - id: customer-events
+      name: '@dsh-customer-service/events'
+    - id: customer-approval
+      name: '@dsh-customer-service/approval'
+    - id: customer-query-order
+      name: dsh-plugin-customer-query-order
+    - id: customer-query-logistics
+      name: dsh-plugin-customer-query-logistics
+    - id: customer-query-inventory
+      name: dsh-plugin-customer-query-inventory
+    - id: customer-cancel-order
+      name: dsh-plugin-customer-cancel-order
+    - id: customer-return-order
+      name: dsh-plugin-customer-return-order
+    - id: customer-refund-order
+      name: dsh-plugin-customer-refund-order
+    - id: customer-change-address
+      name: dsh-plugin-customer-change-address
+    - id: customer-refund-progress-alert
+      name: dsh-plugin-customer-refund-progress-alert

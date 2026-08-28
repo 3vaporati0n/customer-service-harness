@@ -1,0 +1,3 @@
+- insert:
+    - id: customer-refund-progress-alert
+      name: dsh-plugin-customer-refund-progress-alert

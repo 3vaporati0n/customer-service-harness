@@ -1,0 +1,28 @@
+{
+  "name": "dsh-customer-service-suite-workspace",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "legacy:install": "npx -y pnpm@11.7.0 --dir legacy/dsh-plugin-order-query install --ignore-workspace --frozen-lockfile",
+    "build": "pnpm -r --if-present build",
+    "test": "pnpm legacy:install && pnpm -r --if-present test && vitest run tests/repository-layout.test.mjs tests/query-order-compat.test.mjs tests/query-logistics-compat.test.mjs tests/bundle.test.mjs tests/package-scripts.test.mjs tests/customer-db.test.mjs",
+    "verify": "pnpm build && pnpm test && node scripts/verify-bundles.mjs",
+    "package:suite": "node scripts/package-suite.mjs",
+    "install:web": "node scripts/install-web.mjs",
+    "db:build": "pnpm --filter @dsh-customer-service/domain build && pnpm --filter @dsh-customer-service/storage-sqlite build",
+    "db:init": "pnpm db:build && node scripts/customer-db.mjs init",
+    "db:inspect": "pnpm db:build && node scripts/customer-db.mjs inspect",
+    "db:reset": "pnpm db:build && node scripts/customer-db.mjs reset"
+  },
+  "devDependencies": {
+    "@deepseek-ai/cordis": "4.0.1",
+    "@dsh-customer-service/state": "workspace:^",
+    "typescript": "6.0.3",
+    "vitest": "4.1.8",
+    "yaml": "2.8.1"
+  },
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "dsh-plugin-customer-refund-order",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "files": ["lib", "cordis.patch.yml"],
+  "exports": { ".": "./lib/index.js" },
+  "scripts": { "build": "tsc -p tsconfig.json", "test": "vitest run" },
+  "dependencies": {
+    "@dsh-customer-service/approval": "workspace:^",
+    "@dsh-customer-service/domain": "workspace:^",
+    "@dsh-customer-service/events": "workspace:^",
+    "@dsh-customer-service/state": "workspace:^"
+  },
+  "devDependencies": { "@deepseek-ai/cordis": "4.0.1" },
+  "dsh": { "bundle": { "patch": "cordis.patch.yml" } }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "@dsh-customer-service/domain",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "files": ["lib"],
+  "exports": {
+    ".": "./lib/index.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "@deepseek-ai/dsh-tools": "0.1.1-rc.2"
+  }
+}
