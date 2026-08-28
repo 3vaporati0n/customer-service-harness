@@ -1,0 +1,3 @@
+- insert:
+    - id: order-query-tool
+      name: dsh-plugin-order-query

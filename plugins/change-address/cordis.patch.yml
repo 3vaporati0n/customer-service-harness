@@ -1,0 +1,3 @@
+- insert:
+    - id: customer-change-address
+      name: dsh-plugin-customer-change-address

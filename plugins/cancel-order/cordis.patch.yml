@@ -1,0 +1,3 @@
+- insert:
+    - id: customer-cancel-order
+      name: dsh-plugin-customer-cancel-order

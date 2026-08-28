@@ -1,0 +1,22 @@
+{
+  "name": "dsh-bundle-customer-service-suite",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "files": ["cordis.patch.yml"],
+  "dependencies": {
+    "@dsh-customer-service/storage-sqlite": "workspace:^",
+    "@dsh-customer-service/state": "workspace:^",
+    "@dsh-customer-service/events": "workspace:^",
+    "@dsh-customer-service/approval": "workspace:^",
+    "dsh-plugin-customer-query-order": "workspace:^",
+    "dsh-plugin-customer-query-logistics": "workspace:^",
+    "dsh-plugin-customer-query-inventory": "workspace:^",
+    "dsh-plugin-customer-cancel-order": "workspace:^",
+    "dsh-plugin-customer-return-order": "workspace:^",
+    "dsh-plugin-customer-refund-order": "workspace:^",
+    "dsh-plugin-customer-change-address": "workspace:^",
+    "dsh-plugin-customer-refund-progress-alert": "workspace:^"
+  },
+  "dsh": { "bundle": { "patch": "cordis.patch.yml" } }
+}

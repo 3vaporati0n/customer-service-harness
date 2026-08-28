@@ -1,0 +1,10 @@
+.DS_Store
+node_modules/
+**/node_modules/
+**/lib/
+dist/
+*.tgz
+/data/customer-service.db
+/data/customer-service.db-wal
+/data/customer-service.db-shm
+/data/backups/*.db

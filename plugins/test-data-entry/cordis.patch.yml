@@ -1,0 +1,3 @@
+- insert:
+    - id: customer-test-data-entry
+      name: dsh-plugin-customer-test-data-entry

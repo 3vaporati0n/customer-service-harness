@@ -1,0 +1,3 @@
+- insert:
+    - id: customer-query-inventory
+      name: dsh-plugin-customer-query-inventory

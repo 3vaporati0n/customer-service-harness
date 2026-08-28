@@ -1,0 +1,3 @@
+- insert:
+    - id: customer-refund-order
+      name: dsh-plugin-customer-refund-order
